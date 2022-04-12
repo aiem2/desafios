@@ -1,0 +1,328 @@
+*{
+    padding:0;
+    margin:0;
+    border:0;
+    font-family: 'Lobster', cursive;
+    font-family: 'Cabin', sans-serif;
+    font-weight: 400
+    
+}
+
+hr{
+    border: 1px solid black;
+    opacity:2   
+}
+
+.navbar-brand{
+    margin-left: 8vw
+}
+
+.navbar-collapse{
+    text-align: center
+}
+
+.ficha{
+    display:flex;
+    padding-top:20px
+}
+
+.fprincipal{
+    display:inline;
+    
+}
+
+.info_ft{
+    text-align:center
+}
+
+h1{
+    font-weight: 700;
+    display: inline
+}
+
+h4{
+    padding-bottom:1em
+}
+
+.botones{
+    margin: 0;
+    
+}
+
+.botones_ft{
+    text-decoration:none;
+    color:#373A3C;
+    border: 1px solid #DDDDDD;
+    display:inline-block;
+    padding:.35em;
+    margin-left:1.2em
+   
+}
+
+#bajo_car{
+    width: 60em;
+    margin-left:22%
+    
+}
+
+#linea{
+    border: .8px solid black;
+    opacity:.8 
+}
+
+
+
+
+.ingredientes{
+    margin-top: 10vh;
+}
+
+#ing{
+    margin-left:3.5vw
+}
+
+#bajo_ing{
+    width:10em;
+    margin-top:-1.5vh;
+    border: 1px solid black;
+    opacity:1
+}
+
+.preparacion{
+    padding-top:2vh
+}
+
+
+
+.relacionadas{
+    text-align:center;
+    padding-top: 2vh;
+    
+}
+
+.otras{
+    padding-bottom: 2vh
+}
+
+.card{
+    margin:auto;
+    margin-top: 1vh;
+    margin-bottom:1vh
+}
+
+.newsletter{
+    background-color:#DC3545;
+    color:white;
+    padding-top:5vh;
+    padding-left:5vw;
+    padding-right:5vw;
+    text-align:center;
+    padding-bottom:5vh
+    
+    
+}
+
+.texto_news{
+    text-align:center;
+    display:inline;
+    margin-bottom:5vh
+    
+   
+}
+
+.news_frase{
+    display:inline;
+    
+    
+}
+
+#ricomida_frase{
+    font-family: 'Lobster', cursive;
+    display:inline;
+    
+}
+
+.boton_news{
+    text-decoration:none;
+    color:white;
+    border-style:solid;
+    border-color:#DDDDDD;
+    border-width: 1px;
+    padding: 1.5vh 15vw
+    
+}
+
+footer{
+    background-color: #373A3C;
+    color: white;
+    text-align:center;
+    height: 12vh;
+    display:block;
+    align-items:center
+    
+}
+
+.logo_footer{
+    font-family: 'Lobster', cursive;
+    font-size:2rem;
+    padding-top:3vh
+}
+
+
+/* NO MOSTRAR EN CHICA */
+
+@media (max-width:760px){
+    .carousel{
+        display:none!important
+    }
+
+    #bajo_car{
+        display:none
+    }
+
+    #bajo_ing1{
+        display:none
+    }
+
+    #bajo_ing2{
+        display:none
+    }
+
+    .lineas_ficha{
+        display:none
+    }
+
+}
+
+/* PANTALLA SOBRE MEDIUM */
+
+@media  (min-width:760px) {
+    .navbar-collapse{
+        margin-left:50vw
+    }
+
+    .lineas_ficha{
+        display:none
+    }
+
+    .fprincipal{
+        margin-left:20vw;
+        margin-right:-16vw;
+        padding-top:3vh
+    }    
+    .info_ft{
+        text-align:left;
+        padding-left: -30vw;
+    }
+
+    .botones_ft{
+        padding:.35em .75em;
+        margin-right: .85em;
+    }
+    
+    #bajo_car{
+        width:56vw;
+        margin-left:-.1vw;
+        border: 1px solid black;
+        opacity:2   
+    }
+
+    .receta{
+        display:flex;
+        
+    }
+
+    .preparacion{
+        margin-top: 2.7vh
+        
+    }
+    
+    #ing{
+        margin-left:20vw
+    }
+
+    #bajo_ing1{
+        width: 8vw;
+        margin-left:20vw;
+        margin-top: -2.7vh;
+        border: .8px solid black;
+        opacity:.8 
+      
+    }
+
+    #bajo_ing2{
+        width: 8vw;
+        margin-top:-1vw;
+        border: .8px solid black;
+        opacity:.8 
+    }
+
+    #abajo_receta{
+        margin-left:-15vw;
+        width: 60vw;
+        border: .8px solid black;
+        opacity:.8 
+    }
+
+    footer{
+        height: 20vh;
+          
+    }
+    
+    .logo_footer{
+        font-family: 'Lobster', cursive;
+        font-size:1.8rem
+    }
+
+    #carouselExampleIndicators{
+        width:50%;
+        margin-left:20%
+    }
+
+    .car1{
+        display:flex;
+        
+    }
+
+    .car2{
+        display:flex;
+        
+    }
+
+    .d-block{
+        width:12vw;
+        margin-top: 3vh;
+        margin-bottom: 3vh;
+        padding-right:2vw
+        
+        
+    }
+
+    .relacionadas{
+        padding-top:5vh
+    }
+
+    .otras{
+        display: flex;
+    }
+
+    .boton_news{
+        
+        padding: 1.5vh 5vw
+        
+    }
+    .texto_news{
+        font-size:1.5rem;
+        
+       
+    }
+    
+    .news_frase{
+        font-size:1.2rem;
+        
+        
+    }
+
+    
+
+}

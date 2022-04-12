@@ -1,0 +1,139 @@
+*{
+    margin:auto;
+    padding:0;
+    border:0;
+    font-family: 'Open Sans', sans-serif;
+    
+}
+
+.navbar-brand{
+    height: 53px;
+    width: 132px;
+    margin-left: 119px;
+    
+}
+
+.fill{
+    width: 45vw;
+    background-color:#e83e8c
+}
+
+.nav-link{
+    margin:10px;
+   }
+
+.galeria_titulo{
+    padding-top: 64px;
+    padding-bottom:77px;
+}   
+
+#titulo{
+    color: #707070;
+    text-align: center;
+    font-size: 60px;
+    width:590px;
+    height:82px
+}
+
+.gal1{
+    display:flex;
+    margin-left:182px;
+    margin-right:182px;
+}
+
+.subtitulo{
+    font-size:12px
+}
+
+.botones{
+    color:blue;
+    text-decoration:none;
+    padding: 5px;
+    font-size: 12px
+}
+
+.card{
+    display: inline;
+    margin-top:45px;
+    margin-bottom:15px;
+    margin-left:75px
+}
+
+
+.iconos{
+    background-color: #17a2b8;
+    color:#ffffff;
+    height:170px;
+    
+    
+}
+
+.iconos_pago{
+    display:inline-flex;
+    padding-top: 54px;
+    padding-left:240px;
+    
+   
+}
+
+.texto_pago{
+    display:inline;
+    padding-right: 120px;
+    font-weight:400
+    
+}
+
+.pagos{
+    display: inline;
+    font-size:50px;
+}
+
+footer{
+    background-color: #e83e8c;
+    height: 184px;
+    text-align: center
+}
+
+.logo_footer{
+    width: 53.32px;
+    padding-top: 30px
+}
+
+@media only screen and (max-width: 940px){
+    .navbar-brand{
+        margin-left: 40px
+    }
+
+    .logo_footer{
+        width: 35.77px;
+        padding-top: 58px;
+        
+    }
+
+    #titulo{
+        color: #707070;
+        text-align: center;
+        font-size: 35px;
+        width:197px;
+        height:96px
+    }
+
+    .galeria{
+        margin:auto
+    }
+    .galeria_titulo{
+        padding-top: 41px;
+        padding-bottom: 29px
+    }   
+
+    .iconos{
+        display:none
+    }
+
+    .card{
+        margin-bottom:15px;
+        align-self:center
+    }
+    
+   }
+

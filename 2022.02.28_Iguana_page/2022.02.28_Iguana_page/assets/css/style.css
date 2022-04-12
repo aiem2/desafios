@@ -1,0 +1,193 @@
+*{
+    padding: 0;
+    margin: auto;
+    font-family: "Raleway"
+    
+}
+
+
+
+header{
+    text-align: center;
+    color: white;
+    background-color:black;
+    width: 1280px;
+    height: 73px;
+    
+}
+
+h1{
+    font-size: 50px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    font-weight: 500
+      
+}
+
+.foto_grande{
+    width: 1280px;
+    height: 727px;
+}
+
+.desc_section{
+    width: 1280px;
+    height: 348px;
+    background-color: black;
+    color: white;
+    display: block;
+    padding-top: 100px;
+    
+}
+
+.texto{
+    width: 475px;
+    height: 197px;
+    padding-left: 150px;
+    padding-right: 106px;
+    padding-top: 75px;
+    padding-bottom: 76px;
+    display: inline-block;
+    opacity: 0.6;
+    font-weight:300;
+        
+}
+
+.foto{
+    width: 399px;
+    height: 237px;
+    display: inline-block;
+    
+}
+
+.icons_section{
+    background-color: #1e1a13;
+    color:white;
+    width: 1280px;
+    height: 348px;
+    display: block;
+  
+
+}
+
+h2{
+    height: 47px;
+    width: 356px;
+    padding-top: 75px;
+    padding-bottom: 50px;
+    padding-left: 463.5px;
+    padding-right: 460.5px;
+    font-size: 40px;
+    display: block;
+    font-weight: 500
+}
+
+.iconos{
+    padding-left: 300px
+}
+
+.ojo{
+    display: inline-block;
+    text-align: center
+   
+}
+
+#ojo{
+    width: 36.64px;
+    height: 57px;
+    font-size:40px
+    
+}
+.texto_ojo{
+    font-size:25px;
+    opacity:0.6;
+    width: 202px;
+    font-weight:300;
+}
+
+.mano{
+    display: inline-block;
+    text-align: center
+}
+
+.texto_mano{
+    font-size:25px;
+    opacity:0.6;
+    width: 202px;
+    font-weight:300;
+
+}
+
+#mano{
+    width: 36.64px;
+    height: 57px;
+    font-size:40px
+    
+}
+.pincel{
+    display: inline-block;
+    text-align: center
+}
+
+.texto_pincel{
+    font-size:25px;
+    opacity:0.6;
+    width: 282px;
+    font-weight:300;
+
+}
+
+#pincel{
+    width: 36.64px;
+    height: 57px;
+    font-size:40px
+    
+}
+
+.gallery{
+    width: 1280px;
+    height: 348px;
+    background-color:black;
+    
+}
+
+.fotos{
+    padding-top: 73px;
+    padding-right: 150px;
+    padding-bottom:73px;
+    padding-left: 150px;
+    
+}
+
+.gallery1{
+    width: 316px;
+    height: 202px;
+    padding-right: 10px
+}
+
+.gallery2{
+    width: 316px;
+    height: 202px;
+    padding-right: 10px
+}
+
+.gallery3{
+    width: 316px;
+    height: 202px
+}
+
+footer{
+    background-color: #1e1a13;
+    color: white;
+    width: 1280px;
+    height: 102px;
+}
+
+.texto_footer{
+    padding-top: 39px;
+    padding-right: 299px;
+    padding-bottom: 39px;
+    padding-left: 299px;
+    font-size: 20px;
+    font-weight:300;
+    opacity:.4;
+}
