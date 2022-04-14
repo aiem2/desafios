@@ -10,7 +10,7 @@ pintas = ['C','D','E','T']
 cartas = 5
 mazo = []
 
-cartas.times do |i|
+cartas.times do
     mazo.push Carta.new(Random.rand(1..13), pintas.sample)
 end
 
