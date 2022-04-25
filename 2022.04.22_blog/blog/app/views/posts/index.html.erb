@@ -1,0 +1,47 @@
+<br>
+<br>
+<h1>Ingresa tu post</h1>
+<div class="row w-50"> 
+<form method = "get" action = "posts/create" >
+    <br>
+    <div class="form-group">
+        <label for="title">Título del post</label>
+        <input name="title" class="form-control" id="title" placeholder="Ingresa el título de tu post">
+    </div>
+    <br>
+    <div class="form-group">
+        <label for="content">Contenido de tu post</label>
+        <textarea name="content" class="form-control" placeholder="Ingresa la descripción de tu post"></textarea>
+    </div>
+    <br>
+    <div class="form-group">
+        <label for="image_url">Imagen</label>
+        <input name="image_url" class="form-control" id="image_url"  placeholder="Ingresa la url de tu imagen">
+    </div>
+    <br>
+    <button type="submit" class="btn btn-primary">Enviar</button>
+</form>
+</div>
+<br>
+<br>
+<h1>Posts existentes</h1>
+<br>
+<table class="table">
+    <tr>
+        <th>Id</th>
+        <th>Fecha de creación</th>
+        <th>Título</th>
+        <th>Contenido</th>
+        <th>Imagen</th>
+    </tr>
+    <% @posts.each do |post| %>
+        <tr>
+            <td><%= post.id %> </td>
+            <td><%= post.created_at%></td>
+            <td><%= post.title %> </td>
+            <td><%= post.content %> </td>
+            <td><%= image_tag post.image_url, :type => :upload, :width => 250, :height => 250, :crop => :fill%> </td>
+    
+        </tr>
+    <% end %>
+</table>
