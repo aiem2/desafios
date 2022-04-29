@@ -1,0 +1,15 @@
+<br>
+<% if @proyecto.errors.any? %>
+    <div id="error_explanation">
+        <h2> Hubo <%= pluralize(@proyecto.errors.count, "error(es)") %> lo cual no perimitió el registro de tu proyecto:</h2>
+        <ul>
+            <% @proyecto.errors.full_messages.each do |msg| %>
+                <li><%= msg %>.</li>
+            <% end %>
+        </ul>
+        <%= link_to("Corregir", "/projects/form") %>
+    </div>
+    <% else %>
+        <h3> Registraste tu post con éxito </h3>
+        <%= link_to("Revisar listado de proyectos", "/projects/dashboard") %>
+<% end %>

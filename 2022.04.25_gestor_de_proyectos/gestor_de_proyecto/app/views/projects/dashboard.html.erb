@@ -1,0 +1,40 @@
+<br>
+<h5>Selecciona el estado de proyecto que deseas revisar:</h5>
+<nav class="navbar">
+  <div class="container-fluid">
+    <form class="d-flex">
+        <select name="buscar" class="custom-select" id="state">
+            <option selected value="Todos">Todos</option>
+            <option value="Propuesta">Propuesta</option>
+            <option value="En progreso">En progreso</option>
+            <option value="Terminado">Terminado</option>
+        </select>
+      <button class="btn btn-outline-success" type="submit">Buscar</button>
+    </form>
+  </div>
+</nav>
+<br>
+<h3>Proyectos actualmente ingresados:</h3>
+
+<table class="table">
+    <tr>
+        <th>Id</th>
+        <th>Fecha de presentación</th>
+        <th>Título</th>
+        <th>Descripción</th>
+        <th>Fecha de inicio</th>
+        <th>Fecha de término</th>
+        <th>Status</th>
+    </tr>
+    <% @proyectos.each do |project| %>
+        <tr>
+            <td><%= project.id %> </td>
+            <td><%= project.created_at %> </td>
+            <td><%= project.title%></td>
+            <td><%= project.description%></td>
+            <td><%= project.date_start%></td>
+            <td><%= project.date_end%></td>
+            <td><%= project.state%></td>
+        </tr>
+    <% end %>
+</table>

@@ -1,0 +1,38 @@
+<br>
+<h2>Ingresa tu Proyecto</h2>
+<div class="row w-50"> 
+<form method = "get" action = "create">
+    <br>
+    <div class="form-group">
+        <label for="title">Título del proyecto</label>
+        <input name="title" class="form-control" id="title" placeholder="Ingresa el título de tu proyecto">
+    </div>
+    <br>
+    <div class="form-group">
+        <label for="description">Describe tu proyecto</label>
+        <textarea name="description" class="form-control" placeholder="Ingresa la descripción de tu proyecto"></textarea>
+    </div>
+    <br>
+    <div class="form-group">
+        <label for="date_start">Fecha de inicio (AAAA-MM-DD)</label>
+        <input name="date_start" class="form-control" placeholder="Ingresa la fecha de inicio de tu proyecto">
+    </div>
+    <br>
+    <div class="form-group">
+        <label for="date_end">Fecha de término (AAAA-MM-DD)</label>
+        <input name="date_end" class="form-control" placeholder="Ingresa la fecha de término de tu proyecto">
+    </div>
+    <br>
+    <div class="form-group">
+        <label for="state">Estado de tu proyecto</label>
+        <select name="state" class="custom-select" id="state">
+            <option value="Propuesta">Propuesta</option>
+            <option value="En progreso">En progreso</option>
+            <option value="Terminado">Terminado</option>
+        </select>
+    </div>
+    <br>
+    
+    <button type="submit" class="btn btn-primary">Enviar</button>
+</form>
+</div>
