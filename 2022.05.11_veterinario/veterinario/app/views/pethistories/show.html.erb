@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @pethistory %>
+
+<div>
+  <%= link_to "Editar este historial", edit_pethistory_path(@pethistory) %> |
+  <%= link_to "Listado de historiales", pethistories_path %>
+</div>
+<br>
+<%= button_to "Eliminar este historial", @pethistory, method: :delete %>

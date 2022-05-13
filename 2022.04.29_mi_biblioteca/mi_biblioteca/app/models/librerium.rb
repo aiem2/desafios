@@ -1,0 +1,2 @@
+class Librerium < ApplicationRecord
+end

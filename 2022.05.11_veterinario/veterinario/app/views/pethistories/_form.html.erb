@@ -1,0 +1,37 @@
+<%= form_with(model: pethistory) do |form| %>
+  <% if pethistory.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(pethistory.errors.count, "error") %> no permitieron el registro del historial:</h2>
+
+      <ul>
+        <% pethistory.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :paciente, style: "display: block" %>
+    <%= form.select :pet_id, options_from_collection_for_select(@pets, :id, :name) %>
+  </div>
+  <br>
+  <div>
+    <%= form.label :peso, style: "display: block" %>
+    <%= form.text_field :weight %>
+  </div>
+  <br>
+  <div>
+    <%= form.label :altura, style: "display: block" %>
+    <%= form.text_field :height %>
+  </div>
+  <br>
+  <div>
+    <%= form.label :diagnóstico, style: "display: block" %>
+    <%= form.text_area :diagnostic %>
+  </div>
+  <br>
+  <div>
+    <%= form.submit value="Registrar historial" %>
+  </div>
+<% end %>

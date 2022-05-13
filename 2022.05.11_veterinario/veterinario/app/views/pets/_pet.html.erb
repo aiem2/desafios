@@ -1,0 +1,53 @@
+<div id="<%= dom_id pet %>">
+  <p>
+    <%= link_to "Historial de consultas", pethistories_path%>
+  </p>
+  
+  <p>
+    <strong>Dueño:</strong>
+    <%= pet.owner %>
+  </p>
+
+  <p> 
+    <strong>Nombre:</strong>
+    <%= pet.name %>
+  </p>
+
+  <p>
+    <strong>Raza:</strong>
+    <%= pet.race %>
+  </p>
+
+  <p>
+    <strong>Fecha de nacimiento:</strong>
+    <%= pet.date_birth %>
+  </p>
+
+  <p>
+    <strong> Visitas: </strong><%= pet.visits%>
+  </p>
+</div>
+
+<br>
+<br>
+<table class="table table-light table-stripped">
+  <thead>
+    <tr>
+      <th scope="col">Peso promedio</th>
+      <th scope="col">Peso máximo</th>
+      <th scope="col">Altura promedio</th>
+      <th scope="col">Altura máxima</th>
+    </tr>
+  </thead>
+  <tbody>
+    
+    <tr>
+        <td><%= pet.weight_ave %></td>
+        <td><%= pet.weight_max %></td>
+        <td><%= pet.height_ave %></td>
+        <td><%= pet.height_max %></td>
+           
+    </tr>
+   
+  <tbody>
+</table>
